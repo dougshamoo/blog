@@ -1,6 +1,6 @@
-name: Doug Shamoo's Blog
+name: Doug Shamoo
 description: Blogging about code and stuff
-meta_description: "Doug Shamoo's Blog, Blogging about code and stuff"
+meta_description: "Doug Shamoo, Blogging about code and stuff"
 
 markdown: redcarpet
 highlighter: pygments
