@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "My First Dev Blog"
 date:   2015-08-20 20:30:00
 categories: Intros
 ---
