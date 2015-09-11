@@ -20,7 +20,7 @@ To start, let's look at the iterative version of the code. This code is fairly u
       // initialize a variable to hold our result as we build it up
       var product = 1;
       // iterate through the relevant numbers, mulitplying product by each
-      for (var i = num; i > 1; i--) {
+      for (var i = num; i > 1; --i) {
         product *= i;
       }
       return product;
