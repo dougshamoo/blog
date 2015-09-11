@@ -3,4 +3,4 @@ layout: page
 title: About me 
 ---
 
-I am an aspiring software engineer living in southern California.
+I am a software engineer from southern California. I like coding, bacon, and cats. AMA.
