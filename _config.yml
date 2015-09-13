@@ -4,7 +4,7 @@ meta_description: "Doug Shamoo, Blogging about code and stuff"
 
 markdown: redcarpet
 highlighter: pygments
-logo: true
+logo: assets/images/profile.png
 paginate: 15
 baseurl: /
 domain_name: 'http://dougshamoo.com'
