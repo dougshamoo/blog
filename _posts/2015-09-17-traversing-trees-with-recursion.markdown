@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Recursing Through the Nodes of a Tree"
+title:  "Traversing Trees with Recursion"
 date:   2015-09-17 21:30:00
 categories: javascript recursion trees traversal
 ---
