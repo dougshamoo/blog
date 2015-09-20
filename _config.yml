@@ -11,5 +11,5 @@ domain_name: 'http://dougshamoo.com'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
-url:            'www.dougshamoo.com'
+url:            'http://www.dougshamoo.com'
 author:         'Doug Shamoo'
