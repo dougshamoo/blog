@@ -19,14 +19,19 @@ Now, let's instantiate one and add some branches.
     var treeRoot = new Tree(1);
     var branchTwo = new Tree(2);
     var branchThree = new Tree(3);
+
     treeRoot.children.push(branchTwo);
     treeRoot.children.push(branchThree);
+
     var branchFour = new Tree(4);
     var branchFive = new Tree(5);
+
     branchTwo.children.push(branchFour);
     branchTwo.children.push(branchFive);
+
     var branchSix = new Tree(6);
     var branchSeven = new Tree(7);
+    
     branchThree.children.push(branchSix);
     branchThree.children.push(branchSeven);
 
