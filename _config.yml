@@ -12,5 +12,5 @@ google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'http://dougshamoo.github.io'
+url:            'http://dougshamoo.com/index.html'
 author:         'Doug Shamoo'
