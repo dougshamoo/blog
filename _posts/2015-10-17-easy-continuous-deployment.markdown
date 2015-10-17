@@ -19,7 +19,7 @@ First things first, this article assumes that you already have the following set
 #####Create a New Heroku App
 The first thing that you're going to want to do is create a new app on heroku. You can think of this as the heroku equivalent of the github repo for your project. Just click the `+` button at the top-right corner of your dashboard and then `Create New App`.
 
-![Alt text](../assets/images/heroku-new-app.png)
+![Alt text](http://dougshamoo.com/assets/images/heroku-new-app.png)
 
 #####Procfile
 You're also going to need something called a Procfile, which tells Heroku how to build your app. In this case, we just need to create a file called `Procfile` (no file extension, this will only cause you woe and suffering) in the root directory of our project and put the following line in it:
