@@ -2,7 +2,7 @@
 layout: post
 title:  "Time Complexity: the Basics"
 date:   2015-10-24 14:00:00
-categories: javascript, cs, theorey
+categories: javascript cs theorey
 ---
 
 It's time to talk about everyone's favorite subject, time complexity. In this post, we're just going to quickly cover the basics so you can say something interesting at your next project meeting.
