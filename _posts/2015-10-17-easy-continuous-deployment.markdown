@@ -52,7 +52,9 @@ This pre-supposes that you have your keys for local development stored in a conf
 Aside from the port, which _should_ be automatically handled by Heroku, you will need to specify an "config variable" for each of the above items.
 
 ###Get Deployed
-Coming Soon...
+Now for the exciting part! Well, okay, it's not _that_ exciting, but it is somewhat suspenseful. Go to the `Deploy` tab for your app in the heroku dashboard. You should see a slew of deployment options, but there's only one thing that we're interested in for now. In the `Deployment method` section, click `Github: Connect to GitHub`, find your GitHub repo, and click `Connect`. This will connect the GitHub repo to your new Heroku app. From here, we could scroll down to the bottom to maunally launch a one-time deployment of a particular branch. Or we could.......
 
-###Set up Continuous Deployment
-Coming Soon...
+###Set up Continuous Deployment!
+This is the easiest step of them all. After connecting a GitHub repo to your Heroku app, you should see a new `Automatic deploys` section in the `Deploy` tab. Select the branch that you would like continuously deployed and click `Enable Automatic Deploys`. That's it! Commit and push, and you should see changes within a minute or so in your deployed Heroku app. From now on, any push (or merged PR) to this branch will trigger another build and deploy on Heroku.
+
+There you have it. I told you it was easy. Now go connect all your apps to Heroku. Just do it. It's too easy not too.
