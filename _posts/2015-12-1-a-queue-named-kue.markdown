@@ -14,7 +14,7 @@ This is how you create a connection to the Singleton Queue instance on redis:
 All processes that utilize the job queue will need to perform this step. Depending on the kueOptions object passed in, we will connect to a redis instance (possibly a redis addon if we are on Heroku). If no options are passed in, kue uses the default local redis configurations.
 
 
-####Creating jobs
+#### Creating jobs
 The first thing you'll probably want to do is create a job to be processed at a later date. The following is an example of creating a job with type 'email':
 
     // Create an email job for later
@@ -32,7 +32,7 @@ The first thing you'll probably want to do is create a job to be processed at a 
 
 This job object is stored in the Redis instance with some additional fields that kue uses to determine it's status and what to do with it upon retrieval.
 
-####Events
+#### Events
 Kue makes it possible to add events at the job-level or queue level. Setting these events is syntactically similar to jQuery, Backbone, and many other libararies. This is how you would set a completion task on the job we just created above:
 
     job.on('complete', function(result){
@@ -46,7 +46,7 @@ It's important to note that if your project is deployed on distributed systems l
     });
 
 
-####Processing
+#### Processing
 When a job is ready to be performed (immediately if you do not provide a job delay upon creating it), kue will trigger an event it will be promoted from `delayed` to `queued`, at which point a running process with the following code, will process it:
 
     queue.process('email', function(job, done) {
@@ -56,5 +56,5 @@ When a job is ready to be performed (immediately if you do not provide a job del
 
 Boom. Job complete.
 
-####Conclusion
+#### Conclusion
   So far, my experiences with Kue have been very positive, although it can be tricky to get it all working correctly in a deployed, distributed environment. It is definitely a good object when CRON jobs alone will not suffice. I am currently using Kue.js in [rmindr](https://github.com/dougshamoo/rmindr), which is obviously the coolest thing since sliced bread or rollerblades.
