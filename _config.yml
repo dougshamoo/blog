@@ -2,7 +2,7 @@ name: Doug Shamoo
 description: Blogging about code and stuff
 meta_description: "Doug Shamoo, Blogging about code and stuff"
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 15
