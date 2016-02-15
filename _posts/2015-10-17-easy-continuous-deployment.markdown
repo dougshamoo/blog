@@ -8,7 +8,8 @@ disqus: true
 
 In this post, I'm going to run through the quickest and easiest steps to deploy your Node/Express app on Heroku and setup continuous deployment from your github repo.
 
-First things first, this article assumes that you already have the following set up,
+First things first, this article assumes that you already have the following set up:
+  
   * A working (more or less) Node/Express project
   * A github account
   * A github repo for the project that you want to deploy
