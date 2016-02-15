@@ -2,7 +2,7 @@
 layout: post
 title:  "Traversing Trees with Recursion"
 date:   2015-09-17 21:30:00
-categories: javascript recursion trees traversal
+categories: javascript recursion trees traversal depth-first
 disqus: true
 ---
 
@@ -46,7 +46,7 @@ This will create a tree that looks something like this:
 
 
 
-We can define a function logAllNodeValues, that... you guessed it, logs the node value of each node in the tree. We'll achieve this by recursing through all of the nodes and console.logging the value 
+We can define a function `logAllNodeValues`, that... you guessed it, logs the node value of each node in the tree. We'll achieve this by recursing through all of the nodes and console.logging the value 
 
     var logAllNodeValues = function(node) {
       console.log(node.value);
