@@ -3,6 +3,7 @@ layout: post
 title:  "Easy Continuous Deployment: Node/Express App on Heroku"
 date:   2015-10-17 14:30:00
 categories: javascript deployment node express
+disqus: true
 ---
 
 In this post, I'm going to run through the quickest and easiest steps to deploy your Node/Express app on Heroku and setup continuous deployment from your github repo.

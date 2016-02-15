@@ -3,6 +3,7 @@ layout: post
 title:  "Traversing Trees with Recursion"
 date:   2015-09-17 21:30:00
 categories: javascript recursion trees traversal
+disqus: true
 ---
 
 Today, I want to explore a simple and effective way to visit every node of a tree using recursion.

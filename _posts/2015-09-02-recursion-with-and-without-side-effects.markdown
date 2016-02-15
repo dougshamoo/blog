@@ -3,6 +3,7 @@ layout: post
 title:  "Recursion With and Without Side Effects"
 date:   2015-09-02 18:19:00
 categories: javascript recursion side-effects
+disqus: true
 ---
 
 Recursion and I have always had a strained relationship. At times, I've thought that I understood recursion, only to have my misunderstandings about recursion recursively bite me in the rear.

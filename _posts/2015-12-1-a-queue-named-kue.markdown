@@ -2,7 +2,8 @@
 layout: post
 title:  "A Queue called Kue"
 date:   2015-12-1 18:30:00
-categories: javascript kue queue 
+categories: javascript kue queue
+disqus: true
 ---
 
 Let's say you want to perform some job at a time in the future. This could be something as simple as sending an email, or something more complicated like manipulation video files. Normally, CRON jobs would do the trick. However, on distributed systems like Heroku, they can be a major [pain in the butt](https://devcenter.heroku.com/articles/scheduled-jobs-custom-clock-processes) due to process restarts and a [temporary filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem). [Kue.js](https://github.com/Automattic/kue) is a priority job queue that is backed by a Redis instance, and thus solves at least one problem of persistence for us.

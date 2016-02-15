@@ -3,6 +3,7 @@ layout: post
 title:  "Angular Services vs Factories"
 date:   2015-09-26 16:30:00
 categories: javascript angular frontend
+disqus: true
 ---
 
 Angular is super auto-magical and awesome. But let's be honest, the Angular ecosystem can be a large, confusing, and somewhat irritating place when things don't work as you might expect them to. In this post, we'll uncover the mysterious secret about angular factories and services that will finally allow you to sleep at night again.

@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "My First Dev Blog"
-disqus: true
 date:   2015-08-20 20:30:00
 categories: Intros
+disqus: true
 ---
 
 Hello, my name is Doug. Welcome to my first blog. Within these lines, I will explore things that I find interesting. What do I find interesting? Great question! Have a gold star.
