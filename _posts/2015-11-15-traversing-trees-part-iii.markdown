@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Traversing Trees: Part II"
-date:   2015-10-02 22:00:00
-categories: javascript trees traversal breadth-first
+title:  "Traversing Trees: Part III"
+date:   2015-11-15 18:00:00
+categories: javascript trees traversal higher-order-functions
 disqus: true
 ---
 
