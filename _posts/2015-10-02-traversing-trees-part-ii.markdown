@@ -6,7 +6,7 @@ categories: javascript trees traversal breadth-first
 disqus: true
 ---
 
-A while back I wrote a post about [traversing tree data structures with recursion](http://dougshamoo.github.io/javascript/recursion/trees/traversal/2015/09/17/traversing-trees-with-recursion.html). For those of you who are especially astute readers, you'll have noticed that I alluded to the possibility of a breadth-first traversal of the tree as opposed to the depth-first traversal that I showed in that post.
+A while back I wrote a post about [traversing tree data structures with recursion](http://dougshamoo.github.io/javascript/recursion/trees/traversal/depth-first/2015/09/17/traversing-trees-with-recursion.html). For those of you who are especially astute readers, you'll have noticed that I alluded to the possibility of a breadth-first traversal of the tree as opposed to the depth-first traversal that I showed in that post.
 
 Before we begin and for the uninitiated, let's concisely define these two traversal methodologies:
 
