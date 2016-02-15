@@ -1,0 +1,78 @@
+---
+layout: post
+title:  "A Queue called Kue"
+date:   2015-12-1 18:30:00
+categories: javascript kue queue
+disqus: true
+---
+
+A few weeks back, I finished up a project called [tipp.us](http://tipp-us.github.io), a mobile-first web app for finding and tipping local artists as quickly as is securely possible (it's pretty awesome, you should check it [out](http://tipp-us.github.io)). I worked on this project with a team of 4 other engineers, serving as Scrum Master and guiding our Git workflow. It was one of the smoothest development processes that I have had the privilege of taking part in.
+
+It occured to me recently, when I was asked to give a short presentation about Git, that things don't always go smoothly for other teams, and in some cases, projects simply implode under the weight of poor workflow, task management, and git conflicts. Thus, a presentation called `git tips` was born.
+
+Most of the information is in the slides for the presentation which can be viewed [here](https://docs.google.com/presentation/d/1M5NeNTMLBfSM-LuCLTE5vHd1WfwGUyZrdkSJ4N0IswM/edit?usp=sharing). However, I want to go over some of the main points in case anyone goes a-googling for git conflict salvation at a future date.
+
+### Decide on a workflow and get your whole team on board with it.
+Seriously. This sounds pedantic, but I find that a lot of teams only plan their project's features without ever discussing how they are going to attempt to merge these features into one unified project. Setting all this up beforehand (possibly by getting together and writing a solid CONTRIBUTING.md for your repo), will save a whole lot of headaches down the road, trust me.
+
+Personally, I prefer a forking workflow on Github, as detailed in the presentation slides. The short description is that there exists a main organization project repo, which is the ultimate source of truth for your project. Team members then fork the org repo into their own personal dev repos, which they will then clone down to their local systems to develop on.
+
+### Forking Workflow
+* Group has a main repo that nobody pushes to directly
+* Each group member forks the main repo, then...
+  * clones down their fork
+  * pushes local changes to their fork
+  * creates a pull request from their fork to the main repo
+* Ideally, one person serves as the ‘project maintainer’ and reviews all PRs before being merged into the main repo
+
+![Git Forking Workflow](https://camo.githubusercontent.com/ba055eab9cd7f0c24ea14ff0b704371afd611f4e/687474703a2f2f7777772e646176696467772e636f6d2f636f6e74656e742f696d616765732f323031342f4175672f4749742d576f726b666c6f772d4469616772616d2d2d352d2e706e67)
+
+### Branches, hopefully the namespaced kind
+* Snapshot of the repo at a certain time (after a certain commit)
+* Namespace them for clarity, use descriptive branch names
+~~~  
+git checkout -b namespace/something-descriptive
+~~~
+* namespace/something-descriptive
+  * Ex.  feat/facebook-auth
+  * Ex.  test/appCtrl-spec
+
+### Rebase
+* A way to integrate new changes into your code without merging
+* Keeps merge conflicts small and localized instead of massive, distributed and soul-shattering
+~~~    
+git pull --rebase upstream development
+~~~
+* Rewinds your local commits, applies new merged code, and tries to put your commits back on top of it without breaking anything
+* Handle conflicts on each of your commits separately
+
+### Squashing commits
+* Take a bunch of local commits and turn them into one shiny well-presented one, so you don’t look like a noob in the commit history
+~~~
+git rebase -i HEAD~n
+~~~
+* n is the number of commits that you want to squash counting back from the HEAD (most recent commit)
+* Required by a bunch of big open source projects (e.g. Node.js)
+
+### Another good reason to squash commits...
+* Github will auto-populate your PR title and body for you
+
+* Which brings us to good commit messages…
+  * short descriptive header line (maybe with a closing keyword and an issue number)
+  * blank line followed by a much more descriptive commit body
+* Example:
+~~~
+(feat) Implement crazy awesome thing [Closes #217]
+- add blah, blah to package.json. Requires `npm install`.
+~~~
+
+### Team Git Workflow
+* Everyone on the same page
+* Everyone rebasing like mad men so the sc(r)um lord/master can keep reclining and sipping mimosas
+* Everyone working on different sections of awesomely modular code
+
+* Pull Request Merged, Rebase  =>  P.R.M.,R.  =>  prmr
+  * Ex.  Seriously, @group prmr
+
+### Conclusion
+Hopefully, someone somewhere will avoid just one catastrophic nightmare of a merge conflict from reading this post. Next time you see a co-worker, friend, or acquaintance struggling with git, let them struggle a little bit longer and then start talking to them about their git workflow...
