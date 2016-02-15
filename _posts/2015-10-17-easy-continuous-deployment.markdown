@@ -8,18 +8,19 @@ categories: javascript deployment node express
 In this post, I'm going to run through the quickest and easiest steps to deploy your Node/Express app on Heroku and setup continuous deployment from your github repo.
 
 First things first, this article assumes that you already have the following set up:
-  - A working (more or less) Node/Express project
-  - A github account
-  - A github repo for the project that you want to deploy
-  - A Heroku account
-  - A desire to spend as little time as possible on deployment
+- A working (more or less) Node/Express project
+- A github account
+- A github repo for the project that you want to deploy
+- A Heroku account
+- A desire to spend as little time as possible on deployment
 
 
 ### Setup
+
 ##### Create a New Heroku App
 The first thing that you're going to want to do is create a new app on heroku. You can think of this as the heroku equivalent of the github repo for your project. Just click the `+` button at the top-right corner of your dashboard and then `Create New App`.
 
-![Alt text](http://dougshamoo.github.io.com/assets/images/heroku-new-app.png)
+![Alt text](http://dougshamoo.github.io/assets/images/heroku-new-app.png)
 
 ##### Procfile
 You're also going to need something called a Procfile, which tells Heroku how to build your app. In this case, we just need to create a file called `Procfile` (no file extension, this will only cause you woe and suffering) in the root directory of our project and put the following line in it:

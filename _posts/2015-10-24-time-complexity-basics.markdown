@@ -36,11 +36,7 @@ Let's get into some real life examples.
 
 ##### Retrieval of value from a hash table
     /*
-     Complexity: This function has O(1) time complexity because hash table
-     lookups are done in constant time. No matter how big the hash table is,
-     the key simply needs to be converted to a hash and used to lookup the value.
-     The conversion of the key to the hash depends on the size of the key, not the
-     size of the hash table.
+     Complexity: This function has O(1) time complexity because hash table lookups are done in constant time. No matter how big the hash table is, the key simply needs to be converted to a hash and used to lookup the value. The conversion of the key to the hash depends on the size of the key, not the size of the hash table.
      */
 
     var retrieve = function(key){
@@ -52,9 +48,7 @@ Let's get into some real life examples.
     };
 ##### Checking a sorted array for an item
     /*
-     Complexity: This function has O(log(n)) time complexity. Each time we recurse,
-     we cut the array in half, which we are able to do because it is sorted. In the worst case,
-     we divide by 2 until we only have 1 element left, which is log(n) steps.
+     Complexity: This function has O(log(n)) time complexity. Each time we recurse, we cut the array in half, which we are able to do because it is sorted. In the worst case, we divide by 2 until we only have 1 element left, which is log(n) steps.
      */
 
     var sortedArrayContainsItem = function(array, item){
@@ -68,12 +62,7 @@ Let's get into some real life examples.
 
 ##### Checking an array for duplicates
     /*
-     Complexity: This function has O(n^2) time complexity. First we have the outer
-     for loop that loops through every item in the array (O(n)). Then we have
-     an inner slice that creates a new array starting from the next item
-     and going to the end (O(n)), in addition to an indexOf which iterates through each
-     item of the sliced array (O(n)). O(2n) can be simplified to O(n) for the inside block 
-     of the for loop. O(n) happening O(n) times => O(n^2).
+     Complexity: This function has O(n^2) time complexity. First we have the outer for loop that loops through every item in the array (O(n)). Then we have an inner slice that creates a new array starting from the next item and going to the end (O(n)), in addition to an indexOf which iterates through each item of the sliced array (O(n)). O(2n) can be simplified to O(n) for the inside block of the for loop. O(n) happening O(n) times => O(n^2).
      */
 
     var hasDuplicates = function(array){
