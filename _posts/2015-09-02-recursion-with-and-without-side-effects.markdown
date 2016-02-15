@@ -11,7 +11,7 @@ In an effort to further elucidate recursion, both for myself and any other perso
 
 As getting the factorial of a number happens to be one of the canonical examples of basic recursion, this is the problem we will be solving in the following functions.
 
-###Iteration
+### Iteration
 To start, let's look at the iterative version of the code. This code is fairly unremarkable and obviously not recursive, but I've written it here as a reminder of what our function is supposed to be doing. If we pass in a value of 5, our function should essentially return `5 * 4 * 3 * 2 * 1`, or in other words, `120`.
     
     var iterativeFactorial = function(num) {
@@ -26,7 +26,7 @@ To start, let's look at the iterative version of the code. This code is fairly u
       return product;
     };
 
-###Recursion With Side Effects
+### Recursion With Side Effects
 At first glance, this may look very different from our iterative solution. However, it works in a similar fashion, albeit using recursion instead of a for loop. We start by defining a variable to keep track of our running result, and an inner function that will do our recursion for us (causing side effects to the result variable each time it is run).
 
     var factorialWithSideEffects = function(num) {
@@ -51,7 +51,7 @@ At first glance, this may look very different from our iterative solution. Howev
       return product;
     };
 
-###Recursion _Without_ Side Effects
+### Recursion _Without_ Side Effects
 Recursion purists will probably tell you that this is the only "true" recursive function, as we do not cause any side effects to external variables. In this case, we instead simply multiply `num` by the result of the recursive call on `num - 1`. This in turn keeps recursing until `num === 1`, at which point the calls bubble back up the stack and return our desired answer.
 
 
@@ -64,5 +64,5 @@ Recursion purists will probably tell you that this is the only "true" recursive 
       return num * factorialWithoutSideEffects(num - 1);
     };
 
-###What's the Difference?
+### What's the Difference?
 Well, not that much really. They all get you to the same answer, and can all be used more or less as a black box to get there. Sure, recursion without side effects looks more elegant here, but the reality is that it depends a great deal on the problem you are trying to solve. In my case, I choose whichever seems to lend itself best to the task at hand, and further, which solution provides the best readability. Because when I come back to look at my code in a month or two, I don't care how elegant it is if I can't tell what's going on!

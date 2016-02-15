@@ -11,9 +11,9 @@ I enjoy the following:
 
 1. Code - As an developing software engineer, I would hope that it goes without saying that I like to code. Furthermore, I love to solve difficult challenges, especially in domains I know little about. This brings me to my next passion...
 
-2. Learning - Nothing fires me up more than starting from a point of minimal understanding of a subject/domain/problem and rapidly iterating through the steps of gaining the necessary knowledge to understand/approach/solve it.
+1. Learning - Nothing fires me up more than starting from a point of minimal understanding of a subject/domain/problem and rapidly iterating through the steps of gaining the necessary knowledge to understand/approach/solve it.
 
-3. Hacks of all varieties - I like tips and tricks of all kinds, be they programming shortcuts or tips to get the most out of life. Expect the ones I find most interesting to find their way into this blog.
+1. Hacks of all varieties - I like tips and tricks of all kinds, be they programming shortcuts or tips to get the most out of life. Expect the ones I find most interesting to find their way into this blog.
 
 With introductions out of the way, I am happy to announce that I started Hack Reactor this week, which happens to be a combination of all of my favorite things being fed through a firehose. This week has been a blast and it only looks like it is going to get better.
 

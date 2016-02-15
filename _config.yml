@@ -3,14 +3,14 @@ description: Blogging about code and stuff
 meta_description: "Doug Shamoo, Blogging about code and stuff"
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
-domain_name: 'http://dougshamoo.com'
+domain_name: 'http://dougshamoo.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'http://dougshamoo.com'
+url:            'http://dougshamoo.github.io'
 author:         'Doug Shamoo'
