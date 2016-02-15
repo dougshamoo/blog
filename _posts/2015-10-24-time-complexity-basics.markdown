@@ -33,6 +33,7 @@ The big takeaway is constant time is better than linear time is better than poly
 
 ### Examples
 Let's get into some real life examples...
+
 ##### Retrieval of value from a hash table
     /*
      Complexity: This function has O(1) time complexity because hash table
