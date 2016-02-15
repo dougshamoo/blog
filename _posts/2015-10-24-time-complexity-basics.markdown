@@ -32,7 +32,7 @@ Anything after this is pretty undesirable, so I am omitting it for brevity.
 The big takeaway is constant time is better than linear time is better than polynomial time.
 
 ### Examples
-Let's get into some real life examples...
+Let's get into some real life examples.
 
 ##### Retrieval of value from a hash table
     /*
