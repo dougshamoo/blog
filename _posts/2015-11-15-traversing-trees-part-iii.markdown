@@ -6,7 +6,6 @@ categories: javascript trees traversal higher-order-functions
 disqus: true
 ---
 
-
 It's been awhile since I last talked about trees, but I have one more quick post for those that are interested in generalized functions for tree traversal and manipulation.
 
 The last two posts ([Part I](http://dougshamoo.github.io/javascript/recursion/trees/traversal/depth-first/2015/09/17/traversing-trees-with-recursion.html), [Part II](http://dougshamoo.github.io/javascript/trees/traversal/breadth-first/2015/10/02/traversing-trees-part-ii.html)) went over depth-first and breadth-first traversal, respectively. This time, we'll throw in a small tweak to ensure we can do something more interesting than simply logging values to the console. In fact, we'll make sure that we can do anything we want to each node, by implementing our traversal functions as [higher order functions](https://en.wikipedia.org/wiki/Higher-order_function).
