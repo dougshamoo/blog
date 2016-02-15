@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "A Queue called Kue"
-date:   2015-12-1 18:30:00
-categories: javascript kue queue
+title:  "Git tips"
+date:   2015-12-21 19:45:00
+categories: git github forking workflow
 disqus: true
 ---
 
