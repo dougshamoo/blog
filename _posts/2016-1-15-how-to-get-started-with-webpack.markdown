@@ -54,6 +54,7 @@ module.exports = {
 ~~~
 
 In its simplest form, all we need is:
+
 * An entry point for our app, which for react is where we will render our main app component.
 * A location/name for our bundled output file, which we will load in our `index.html` once we want to display something.
 * And our loaders that are responsible for transpiling all our various modules into JavaScript.
