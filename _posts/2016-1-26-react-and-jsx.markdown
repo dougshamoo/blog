@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "React components and JSX"
+title:  "React and JSX"
 date:   2016-1-29 21:45:00
 categories: es2015 react jsx
 disqus: true
