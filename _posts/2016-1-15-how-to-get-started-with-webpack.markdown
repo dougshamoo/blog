@@ -71,4 +71,4 @@ Or, if you like pretty colors, progress updates, and automatic bundling when you
 webpack --watch --colors --progress
 ~~~
 
-Stay tuned for the next post, in which we'll start talking about putting together a basic React apps and a component or two. Happy webpacking!
+Stay tuned for the next post, in which we'll start talking about putting together a basic React app and a component or two. Happy webpacking!
