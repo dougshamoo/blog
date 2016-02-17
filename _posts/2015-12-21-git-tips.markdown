@@ -30,6 +30,7 @@ Personally, I prefer a forking workflow on Github, as detailed in the presentati
 ### Branches, hopefully the namespaced kind
 * Snapshot of the repo at a certain time (after a certain commit)
 * Namespace them for clarity, use descriptive branch names
+^
 ~~~  
 git checkout -b namespace/something-descriptive
 ~~~
@@ -40,6 +41,7 @@ git checkout -b namespace/something-descriptive
 ### Rebase
 * A way to integrate new changes into your code without merging
 * Keeps merge conflicts small and localized instead of massive, distributed and soul-shattering
+^
 ~~~    
 git pull --rebase upstream development
 ~~~
@@ -48,6 +50,7 @@ git pull --rebase upstream development
 
 ### Squashing commits
 * Take a bunch of local commits and turn them into one shiny well-presented one, so you don’t look like a noob in the commit history
+^
 ~~~
 git rebase -i HEAD~n
 ~~~
@@ -61,6 +64,7 @@ git rebase -i HEAD~n
   * short descriptive header line (maybe with a closing keyword and an issue number)
   * blank line followed by a much more descriptive commit body
 * Example:
+^
 ~~~
 (feat) Implement crazy awesome thing [Closes #217]
 - add blah, blah to package.json. Requires `npm install`.
