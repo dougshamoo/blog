@@ -1,3 +1,5 @@
+  **Under Construction...** _Live site very outdated._
+
 # The Blog
 
 This is a collection of my code-related musings.
