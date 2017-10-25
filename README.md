@@ -1,4 +1,6 @@
-  **Under Construction...** _Live site very outdated._
+  **This will probably be replaced by something else in the near-ish future...**
+  
+  _Live site super outdated..._
 
 # The Blog
 
